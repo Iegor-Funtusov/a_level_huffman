@@ -18,6 +18,7 @@ public class HuffmanServiceImpl implements HuffmanService {
     @Override
     public ResultData run(String text) {
         if (text != null && text.length() != 0) {
+            Tree.initMakeCodes();
             ResultData resultData = new ResultData();
             resultData.setText(text);
             resultData.setBinaryText(BinaryUtil.convertToBinary(text));

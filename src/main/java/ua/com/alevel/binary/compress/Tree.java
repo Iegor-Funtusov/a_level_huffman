@@ -17,6 +17,10 @@ public class Tree {
         return makeCodes;
     }
 
+    public static void initMakeCodes() {
+        makeCodes = new ArrayList<>();
+    }
+
     private static List<MakeCode> makeCodes = new ArrayList<>();
 
     public Tree() {}
